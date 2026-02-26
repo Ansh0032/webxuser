@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ansh Singh | Professional Web Designer & Programmer</title>
-
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
 
 <style>
@@ -18,7 +17,7 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0d0d15;
+background:#0f0f1a;
 color:white;
 overflow-x:hidden;
 }
@@ -70,7 +69,7 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:0 20px;
-background:radial-gradient(circle at 20% 20%,#1a1a2e,#0d0d15 60%);
+background:radial-gradient(circle at 20% 20%,#1b1b35,#0f0f1a 60%);
 position:relative;
 overflow:hidden;
 }
@@ -117,16 +116,16 @@ background:linear-gradient(45deg,#00f5ff,#ff00c8);
 }
 
 .hero p{
-opacity:.85;
+opacity:.9;
 font-size:1.2rem;
 line-height:1.8;
 margin-bottom:30px;
 }
 
-/* ===== ELEGANT BUTTON STYLE ===== */
+/* ===== BUTTON STYLE ===== */
 .btn{
 display:inline-block;
-padding:14px 38px;
+padding:14px 40px;
 border-radius:50px;
 font-weight:600;
 background:linear-gradient(45deg,#00f5ff,#ff00c8);
@@ -150,7 +149,7 @@ padding:120px 10%;
 section h2{
 text-align:center;
 font-size:2.5rem;
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
 /* ===== ABOUT ===== */
@@ -158,7 +157,7 @@ margin-bottom:50px;
 max-width:900px;
 margin:auto;
 text-align:center;
-opacity:.85;
+opacity:.9;
 line-height:1.9;
 font-size:1.1rem;
 }
@@ -166,48 +165,42 @@ font-size:1.1rem;
 /* ===== SKILLS ===== */
 .skills-container{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
 
 .skill-card{
 background:rgba(255,255,255,0.05);
 backdrop-filter:blur(20px);
-padding:50px;
+padding:40px;
 border-radius:20px;
-text-align:center;
 border:1px solid rgba(255,255,255,0.08);
-transition:.4s ease;
-transform:scale(0.9);
+transition:.6s ease;
 opacity:0;
+transform:translateY(60px) scale(.95);
 }
 
-.skill-card:hover{
-transform:scale(1.05);
+.skill-card h3{
+margin-bottom:15px;
+font-size:1.4rem;
+color:#00f5ff;
+}
+
+.skill-card p{
+opacity:.85;
+line-height:1.6;
+font-size:.95rem;
+}
+
+.skill-card.active{
+opacity:1;
+transform:translateY(0) scale(1);
 }
 
 /* ===== CONTACT ===== */
 .contact{
 text-align:center;
 }
-
-form{
-max-width:600px;
-margin:40px auto 0;
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-input,textarea{
-padding:15px;
-border-radius:10px;
-border:none;
-background:#1b1b2f;
-color:white;
-}
-
-textarea{ resize:none; }
 
 footer{
 text-align:center;
@@ -216,16 +209,16 @@ background:black;
 opacity:.7;
 }
 
-/* ===== POP-UP SCROLL ANIMATION ===== */
+/* ===== FADE SECTION ANIMATION ===== */
 .fade-up{
 opacity:0;
-transform:translateY(60px) scale(0.95);
+transform:translateY(60px);
 transition:all 0.8s ease;
 }
 
 .fade-up.active{
 opacity:1;
-transform:translateY(0) scale(1);
+transform:translateY(0);
 }
 
 /* RESPONSIVE */
@@ -251,9 +244,9 @@ transform:translateY(0) scale(1);
 <div class="hero-content fade-up">
 <h1>I’m <span>Ansh Singh</span></h1>
 <p>
-Professional Web Designer & Programmer with a strong Computer Science foundation.
-I build scalable, high-performance and visually premium digital solutions
-that create impact, authority and measurable business results.
+Professional Web Designer & Programmer with strong Computer Science foundations.
+I engineer scalable, performance-optimized and visually premium web experiences 
+that help businesses build authority and digital impact.
 </p>
 <a href="#about" class="btn">Know More</a>
 </div>
@@ -262,22 +255,42 @@ that create impact, authority and measurable business results.
 <section id="about" class="about fade-up">
 <h2>About Me</h2>
 <p>
-I specialize in crafting modern web experiences that combine design precision with programming logic.
-My expertise spans HTML, CSS, JavaScript, Python and Java.
-Every project I build focuses on performance, responsiveness, scalability
-and delivering strong digital presence for brands and businesses.
+I specialize in combining design precision with programming intelligence.
+With expertise in HTML, CSS, JavaScript, Python and Java, 
+I build responsive, optimized and scalable digital systems. 
+Every project reflects clean architecture, strong logic and premium presentation.
 </p>
 </section>
 
 <section id="skills">
 <h2 class="fade-up">Technical Expertise</h2>
+
 <div class="skills-container">
-<div class="skill-card">HTML5 – Advanced Semantic Architecture</div>
-<div class="skill-card">CSS3 – Premium UI & Animations</div>
-<div class="skill-card">JavaScript – Dynamic Web Applications</div>
-<div class="skill-card">Python – Backend & Automation</div>
-<div class="skill-card">Java – OOP & Application Logic</div>
-<div class="skill-card">Responsive Design – Mobile First</div>
+
+<div class="skill-card">
+<h3>Frontend Engineering</h3>
+<p>Advanced HTML5 semantic structure, modern CSS architecture, 
+interactive JavaScript applications and fully responsive layouts.</p>
+</div>
+
+<div class="skill-card">
+<h3>Backend Programming</h3>
+<p>Strong problem-solving ability using Python and Java. 
+Object-Oriented Programming, structured logic and scalable systems.</p>
+</div>
+
+<div class="skill-card">
+<h3>Performance Optimization</h3>
+<p>SEO-friendly structure, speed optimization, cross-browser compatibility 
+and performance-focused development strategies.</p>
+</div>
+
+<div class="skill-card">
+<h3>UI/UX & Modern Design</h3>
+<p>Premium glassmorphism interfaces, smooth animations, 
+gradient systems and clean brand-focused digital experiences.</p>
+</div>
+
 </div>
 </section>
 
@@ -287,11 +300,10 @@ and delivering strong digital presence for brands and businesses.
 </section>
 
 <footer>
-© 2026 Elite Gym. Designed & Developed by Ansh.
+© 2026 Ansh Singh. Designed & Developed by Ansh.
 </footer>
 
 <script>
-/* SCROLL POP-UP ANIMATION */
 const observer = new IntersectionObserver(entries=>{
 entries.forEach(entry=>{
 if(entry.isIntersecting){
